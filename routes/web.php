@@ -18,7 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', [
+        "name" => "Galang aidil akbar",
+        "email" => "galangaidil45@gmail.com",
+        "image" => "5190411250.jpg"
+    ]);
 });
 
 Route::get('/blog', function () {
