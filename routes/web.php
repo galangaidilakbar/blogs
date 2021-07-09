@@ -31,7 +31,7 @@ Route::get('/about', function () {
 });
 
 
-Route::get('/blog', function () {
+Route::get('/posts', function () {
     return view('posts', [
         "title" => "Posts",
         "posts" => Post::all()
