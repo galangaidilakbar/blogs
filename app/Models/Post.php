@@ -20,13 +20,13 @@ class Post
         ]
     ];
 
-    public static function all()
+    public static function getAllPost()
     {
         return collect(self::$blog_posts);
     }
 
-    public static function find($slug)
+    public static function getSpecificPost($slug)
     {
-        return static::all()->firstWhere('slug', $slug);
+        return static::getAllPost()->firstWhere('slug', $slug);
     }
 }

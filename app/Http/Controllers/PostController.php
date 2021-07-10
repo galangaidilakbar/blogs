@@ -11,7 +11,7 @@ class PostController extends Controller
     {
         return view('posts', [
             "title" => "Posts",
-            "posts" => Post::all()
+            "posts" => Post::getAllPost()
         ]);
     }
 
@@ -19,7 +19,7 @@ class PostController extends Controller
     {
         return view('post', [
             "title" => "Single Post",
-            "post" => Post::find($slug)
+            "post" => Post::getSpecificPost($slug)
         ]);
     }
 }
