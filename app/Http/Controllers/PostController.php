@@ -11,15 +11,15 @@ class PostController extends Controller
     {
         return view('posts', [
             "title" => "Posts",
-            "posts" => Post::getAllPost()
+            "posts" => Post::all()
         ]);
     }
 
-    public function show($slug)
+    public function show(Post $post)
     {
         return view('post', [
             "title" => "Single Post",
-            "post" => Post::getSpecificPost($slug)
+            "post" => $post
         ]);
     }
 }
