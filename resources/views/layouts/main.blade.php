@@ -18,7 +18,7 @@
       @yield('container')
     </div>
 
-    @include('partials.wave')
+    {{-- @include('partials.wave') --}}
 
     @include('partials.footer')
 
