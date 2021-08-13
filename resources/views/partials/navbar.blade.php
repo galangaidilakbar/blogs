@@ -23,6 +23,9 @@
         <li class="nav-item">
           <a class="nav-link {{ ($active === "Login" ? 'active' : '') }}" href="/login"><i class="bi bi-box-arrow-in-right"></i> Login</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link {{ ($active === "register" ? 'active' : '') }}" href="/register"><i class="bi bi-person-plus-fill"></i> Register</a>
+        </li>
       </ul>
     </div>
   </div>
