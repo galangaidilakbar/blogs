@@ -21,7 +21,7 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link {{ ($active === "Log in" ? 'active' : '') }}" href="/login"><i class="bi bi-box-arrow-in-right"></i> Log in</a>
+          <a class="nav-link {{ ($active === "Login" ? 'active' : '') }}" href="/login"><i class="bi bi-box-arrow-in-right"></i> Login</a>
         </li>
       </ul>
     </div>
